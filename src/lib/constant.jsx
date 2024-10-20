@@ -16,3 +16,20 @@ export const TABS_DATA = [
     icon: <GoAlertFill size={16} />,
   },
 ];
+
+export const CURRENCY_OPTIONS = [
+  {
+    id: 1,
+    name: "UK",
+    symbol: "£",
+    currencyName: "GBP",
+    iconSrc: "/assets/dashboard/uk.png",
+  },
+  {
+    id: 2,
+    name: "UAE",
+    symbol: "د.ك",
+    currencyName: "AED",
+    iconSrc: "/assets/dashboard/uae.png",
+  },
+];

@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "../common/Navbar";
-import ScrollChangeDataAndColor from "../common/ScrollChangeDataAndColor";
+import HeroSection from "./components/HeroSection";
 
 const LandingPage = () => {
   return (
     <div className="h-screen">
-      <Navbar />
-      <ScrollChangeDataAndColor />
+      <HeroSection />
     </div>
   );
 };
