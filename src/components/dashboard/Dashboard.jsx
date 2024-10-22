@@ -48,7 +48,7 @@ const Dashboard = () => {
   const [alertValue, setAlertValue] = useState(0);
   const [alertLoading, setAlertLoading] = useState(false);
   const [alerts, setAlerts] = useState([]);
-  const [dataLoading, setDataLoading] = useState(false);
+  const [dataLoading, setDataLoading] = useState(true);
 
   const { user, loading: authLoading } = useAuth();
 
@@ -64,6 +64,7 @@ const Dashboard = () => {
   const fetchData = async () => {
     const code = currency.currencyName;
     const response = await getVanceData(code);
+    console.log("response", response);
     setForexData(response);
   };
 
